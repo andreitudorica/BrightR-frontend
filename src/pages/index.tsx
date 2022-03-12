@@ -15,7 +15,7 @@ export default function Home() {
       <main dir={isRTL ? 'rtl' : 'ltr'}>
         <Trans
           i18nKey="home:title"
-          components={[<h1/>, <a href="https://nextjs.org">Next.js!</a>]}
+          components={[<h1/>, <a href="https://nextjs.org">BrightR!</a>]}
         />
 
         <h2>
@@ -40,6 +40,16 @@ export default function Home() {
                 <h3>{t('home:catalan')}</h3>
                 <p>
                   {t('home:change-to')} {t('home:catalan')}
+                </p>
+              </CardActionArea>
+            </Link>
+          </Grid>
+          <Grid item xs={6}>
+            <Link href="/post/123" locale="ro">
+              <CardActionArea>
+                <h3>{t('home:romanian')}</h3>
+                <p>
+                  {t('home:change-to')} {t('home:romanian')}
                 </p>
               </CardActionArea>
             </Link>

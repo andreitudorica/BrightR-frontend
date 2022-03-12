@@ -41,6 +41,16 @@ export default function Home() {
             </Link>
           </Grid>
           <Grid item xs={6}>
+            <Link href="/" locale="ro">
+              <CardActionArea>
+                <h3>{t('home:romanian')}</h3>
+                <p>
+                  {t('home:change-to')} {t('home:romanian')}
+                </p>
+              </CardActionArea>
+            </Link>
+          </Grid>
+          <Grid item xs={6}>
             <Button href="https://nextjs.org/docs" color="secondary">
               <h3>Next.{`js ${arrow}`}</h3>
               <p>{t('home:next-docs')}</p>
